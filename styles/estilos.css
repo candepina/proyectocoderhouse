@@ -435,7 +435,10 @@ footer {
         "card4 card5"
         "card4 card5";
 }
-
+.mainsobrevr h3{
+    color: white;
+    padding: 20px;
+}
 @media only screen and (min-width: 1274px) {
     /*COMPUTADOR*/
 
