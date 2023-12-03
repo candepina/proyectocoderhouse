@@ -19,16 +19,12 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-
-
 header {
     background-color: black;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     height: 85px;
     padding: 5px 10%;
-    
 }
 
 .header img {
@@ -44,6 +40,7 @@ header {
 }
 
 .header .navLinks {
+    display: flex;
     list-style: none;
     /*para que no tenga puntitos*/
 
@@ -430,7 +427,10 @@ footer {
 }
 @media only screen and (min-width: 1274px) {
     /*COMPUTADOR*/
-
+    
+    header{
+        align-items: baseline;
+    }
     /*todo lo que sea +1200 se va a ver así*/
     .boxcontainer {
         display: grid;
@@ -487,7 +487,7 @@ footer {
         display: none !important;
     }
     #navsanjovr{
-        display: flex;
+        display: flex !important;
         align-items: center;
     }
 
@@ -568,12 +568,18 @@ footer {
     #burguerIcon {
         display: block;
     }
+    header{
+        align-items: center;
+    }
 
 }
 
 @media only screen and (max-width: 767px) {
 
     /*DISPOSITIVO MOVIL*/
+    header{
+        align-items: center;
+    }
     .boxcontainer {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -653,6 +659,9 @@ footer {
         align-items: flex-end; /* Alinea los elementos a la derecha */
         padding: 1rem;
         z-index: 20;
+    }
+    #navsanjovr ul{
+        display: block;
     }
     .navLinks li {
         margin-bottom: 1rem; /* Espaciado entre elementos del menú */
@@ -773,7 +782,7 @@ footer {
     display: none;
 }
 .contactotitle{
-    font-size: 20px;
+    font-size: 45px;
     display: none;
 }
 .surgimiento{
