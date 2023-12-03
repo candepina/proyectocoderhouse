@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanjo VR</title>
-    <link rel="stylesheet" href="../styles/estilos.css">
+    <title>Iniciar Sesión en SANJOVR</title>
+    <link rel="stylesheet" href="../css/estilosoriginal.css">
     <link rel="shortcut icon" href="../imagenes/icon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -16,30 +16,21 @@
         <div class="logo">
             <a href="../index.html"><img src="../imagenes/logocole.png" alt="logoCole"></a>
         </div>
-        <nav id="navis">
+        <nav id="navsanjovr">
             <ul class="navLinks">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./sobrevr.html">Sobre SANJO VR</a></li>
-                <li><a href="./videos.html">Videos</a></li>
-                <li><a href="./iniciarsesion.html">Iniciar Sesión</a></li>
+                <li><a href="../index.html">Inicio</a></li><br>
+                <li><a href="./sobrevr.html">Sobre SANJO VR</a></li><br>
+                <li><a href="./videos.html">Videos</a></li><br>
+                <li><a href="./iniciarsesion.html">Iniciar Sesión</a></li><br>
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
+            <button id="cerrarMenu">Cerrar</button>
         </nav>
         <svg id="burguerIcon" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
             class="bi bi-list logoMenu" viewBox="0 0 16 16">
             <path fill-rule="evenodd"
                 d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
         </svg>
-        <nav id="burguerMenu" class="ocultar">
-            <ul class="navLinks">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./sobrevr.html">Sobre SANJO VR</a></li>
-                <li><a href="./videos.html">Videos</a></li>
-                <li><a href="./iniciarsesion.html">Iniciar Sesión</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-            <button id="cerrarMenu">Cerrar</button>
-        </nav>
     </header>
 
     <main class="container-fluid">
@@ -47,14 +38,13 @@
         <div class="row justify-content-around">
             <div class= "col-sm-12 col-md-6">
                 <section class="formIniciosesion">
-                    <form class="formularioisesion">
+                    <form class="formularioisesion container-fluid">
                         <div class="mb-3">
-                            <label for="textfield" class="form-label">Usuario</label>
-                            <input type="text" class="form-control" id="user"required>
-                            
+                            <label for="user" class="form-label">Usuario</label>
+                            <input type="text" class="form-control" id="user"required>  
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                            <label for="password" class="form-label">Contraseña</label>
                             <input type="password" class="form-control" id="password" required>
                         </div>
                         <button type="submit" class="btn btn-primary botonIniciarSesion">Iniciar Sesión</button>

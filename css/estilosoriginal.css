@@ -28,6 +28,7 @@ header {
     align-items: center;
     height: 85px;
     padding: 5px 10%;
+    
 }
 
 .header img {
@@ -70,23 +71,12 @@ header .navLinks li a:hover {
     color: #A31C13;
     transition: all 0.5s ease-in-out;
 }
-#burguerMenu {
-    z-index: 20;
-    position: fixed;
-    top: 0;
-    right: 0; 
-    width: 250px;
-    height: 100vh;
-    background-color: #333;
-    padding-top: 60px;
-    transition: right 0.3s ease;
-}
+
 #burguerIcon {
     margin-right: 20px; 
-}
-#burguerMenu {
     display: none;
 }
+
 #cerrarMenu {
     background-color: #A31C13;
     color: white;
@@ -100,7 +90,6 @@ header .navLinks li a:hover {
 }
 
 .mainindex {
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -487,13 +476,19 @@ footer {
     #burguerIcon {
         display: none;
     }
-    #burguerMenu{
-        display: none !important;
-    }
+  
     .boton{
         width: 464px;
         max-width: 100%;
         height: 77px;
+    }
+    
+    #cerrarMenu{
+        display: none !important;
+    }
+    #navsanjovr{
+        display: flex;
+        align-items: center;
     }
 
 }
@@ -544,15 +539,23 @@ footer {
         max-width: 80%; 
     }
 
-    #navcontacto {
-        display: none;
-    }
-
     #navvideos{
         display: none;
     }
-    #navindex {
-        display: none;
+    #navsanjovr {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Inicialmente oculto fuera del área visible */
+        height: 100%;
+        width: 80%; /* Ancho del menú */
+        background-color: grey; /* Color de fondo del menú */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del menú */
+        transition: right 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; /* Alinea los elementos a la derecha */
+        padding: 1rem;
+        z-index: 20;
     }
     #navis{
         display: none;
@@ -608,16 +611,11 @@ footer {
     #navis{
         display: none;
     }
-    #navindex {
-        display: none;
-    }
+    
     #navvideos{
         display: none;
     }
     #navsobrevr {
-        display: none;
-    }
-    #navcontacto{
         display: none;
     }
 
@@ -641,6 +639,41 @@ footer {
     .card4 img {
         width: 100% !important;
     }
+    #navsanjovr {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Inicialmente oculto fuera del área visible */
+        height: 100%;
+        width: 80%; /* Ancho del menú */
+        background-color: grey; /* Color de fondo del menú */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del menú */
+        transition: right 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; /* Alinea los elementos a la derecha */
+        padding: 1rem;
+        z-index: 20;
+    }
+    .navLinks li {
+        margin-bottom: 1rem; /* Espaciado entre elementos del menú */
+    }
+    
+}
+
+#navsanjovr.mostrar {
+    right: 0; /* Muestra el menú moviéndolo hacia la derecha */
+}
+#navsanjovr ul {
+    list-style: none;
+    padding: 0;
+}
+#cerrarMenu {
+    background-color: #333; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 .ubicacion{
@@ -676,6 +709,7 @@ footer {
 }
 
 .formulariocontacto {
+    width: 100%;
     margin: 0 auto;
     background-color: #33B9A9;
 }
@@ -739,7 +773,8 @@ footer {
     display: none;
 }
 .contactotitle{
-    font-size: 45px;
+    font-size: 20px;
+    display: none;
 }
 .surgimiento{
     font-size: 35px;
