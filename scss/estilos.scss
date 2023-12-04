@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
@@ -8,6 +9,10 @@
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
 }
+#burguerIcon{
+    display:none;
+}
+//INDEX
 body{
     background-color: black !important;
     margin: 0;
@@ -16,12 +21,409 @@ body{
     flex-direction: column;
     min-height: 100vh;
 
-    .header{
+    header{
         background-color: black;
         display: flex;
         justify-content: space-between;
-        align-items: center;
         height: 85px;
         padding: 5px 10%;
+
+        div{
+
+            a{
+
+                img{
+                    max-width: 100%;
+                    height: auto;
+                    &:hover{
+                        transform: scale(1.1);
+                    } 
+                }
+            }
+        }
+        nav{
+            display: flex;
+            align-items: end;
+            ul{
+                list-style: none;
+                padding: 0;
+                display: flex;
+
+                li{
+                    display: inline-block;
+                    /*Para que estén uno al lado del otro*/
+                    padding: 0 20px;
+                    &:hover{
+                        transform: scale(1.1)
+                    }
+
+                    a{
+                        font-size: 700;
+                        color: white;
+                        text-decoration: none;
+                        transition: all 0.5s ease-in-out;
+                        &:hover{
+                            color: #A31C13;
+                            transition: all 0.5s ease-in-out;
+                        }
+                    }
+                }
+            }
+            button{
+                background-color: #333; /* Color de fondo del botón */
+                color: white; /* Color del texto del botón */
+                border: none;
+                padding: 0.5rem 1rem;
+                cursor: pointer;
+                border-radius: 5px;
+                display: none;
+                &:hover{
+                    background-color: #9e312a;
+                }
+            }
+
+        }
+        #navsanjovr.mostrar {
+            right: 0; /* Muestra el menú moviéndolo hacia la derecha */
+        }
     }
+    .mainindex{
+        display: block;
+        //PRIMERA IMAGEN DE LOS VR, LOS GRISES.
+        img{
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+        }
+
+        h1{
+            text-align: center;
+            padding-bottom: 1em;
+            margin: 0 auto;
+            background: none;
+            color: #A31C13;
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: 10px;
+            font-size: 50px;
+            font-weight: 800;
+            text-shadow: 1px 1px 5px white;
+        }
+
+        div{
+            display: flex;
+            justify-content: center;
+            h2{
+                color: white;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 700;
+                letter-spacing: 5px;
+                font-size: 30px;
+                padding: 20px;
+            }
+        }
+        a{
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            button{
+                background: black;
+                border-radius: 20px;
+                color: white;
+                font-family: 'Poppins', sans-serif;
+                font-size: 16px;
+                transition: all 0.5s ease-in-out;
+                margin-bottom: 100px;
+                &:hover{
+                    color: #A31C13;
+                    box-shadow: 0px 4px 20px rgba(255, 165, 2, 0.50);
+                    transition: all 0.5s ease-in-out;
+                }
+            }
+        }
+        img{
+            max-width: 100%;
+            width: 100%;
+            opacity: 50%;
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+        section{
+            h2{
+                text-align: center;
+                padding-bottom: 1em;
+                margin: 0 auto;
+                background: none;
+                color: white;
+                font-family: 'Poppins', sans-serif;
+                letter-spacing: 10px;
+                font-size: 35px;
+                font-weight: 800;
+                
+            }
+            div{
+                div{
+                    background-color: #050505 !important;
+                    color: #A31C13 !important;
+                    img{
+                        height: 430px;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        color: white;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+@media only screen and (min-width: 1274px) {
+    /*COMPUTADOR*/
+    
+    header{
+        align-items: baseline;
+    }
+    /*todo lo que sea +1200 se va a ver así*/
+    .boxcontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 1em 1em;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "box1 box2 box3"
+            "box4 box5 box6"
+            "box7 box8 box9";
+    }
+    
+    .cardssurgimientosanjovr {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-auto-columns: 1fr;
+        gap: 1em 1em;
+        padding-right: 1em;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "card4 card5";
+    }
+    .card4 {
+        grid-area: card4;
+    }
+    .card4 img {
+        width: 100%;
+    }
+    .card5 {
+        grid-area: card5;
+        background-color: #A31C13;
+        box-sizing: border-box;
+        border-radius: 20px;
+    }
+
+    .lentesVr img {
+        max-width: 80%;
+            height: 900px;
+    }
+
+    #burguerIcon {
+        display: none;
+    }
+  
+    .boton{
+        width: 464px;
+        max-width: 100%;
+        height: 77px;
+    }
+    
+    #cerrarMenu{
+        display: none !important;
+    }
+    #navsanjovr{
+        display: flex !important;
+        align-items: center;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1273px) {
+
+    /*TABLET*/
+    
+    .boxcontainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-columns: 1fr 1fr;
+        gap: 1em 1em;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "box1 box2"
+            "box3 box4"
+            "box5 box6"
+            "box7 box8"
+            "box9";
+    }
+    .cardssurgimientosanjovr {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-auto-columns: 1fr;
+        gap: 1em 1em;
+        padding-right: 1em;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "card4"
+            "card5";
+    }
+    .boton{
+       width: 350px;
+       max-width: 80%;
+    }
+    .card4 {
+        grid-area: card4;
+    }
+    .card4 img {
+        width: 100% !important;
+    }
+    .lentesVr img {
+        height: 100%;
+    }
+    .logo img {
+        max-width: 80%; 
+    }
+
+    #navvideos{
+        display: none;
+    }
+    #navsanjovr {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Inicialmente oculto fuera del área visible */
+        height: 100%;
+        width: 80%; /* Ancho del menú */
+        background-color: grey; /* Color de fondo del menú */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del menú */
+        transition: right 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; /* Alinea los elementos a la derecha */
+        padding: 1rem;
+        z-index: 20;
+    }
+    #navis{
+        display: none;
+    }
+
+    #navsobrevr {
+        display: none;
+    }
+
+    #burguerIcon {
+        display: block;
+    }
+    header{
+        align-items: center;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    /*DISPOSITIVO MOVIL*/
+    header{
+        align-items: center;
+    }
+    .boxcontainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-auto-columns: 1fr;
+        gap: 1em 1em;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "box1"
+            "box2"
+            "box3"
+            "box4"
+            "box5"
+            "box6"
+            "box7"
+            "box8"
+            "box9";
+    }
+    .boton{
+        width: 200px;
+        max-width: 100%;
+        height: 77px;
+     }
+    .logo img {
+        max-width: 70%; 
+    }
+    .mainindex {
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .lentesVr img {
+        width: 100%;
+        height: auto;
+    }
+    #navis{
+        display: none;
+    }
+    
+    #navvideos{
+        display: none;
+    }
+    #navsobrevr {
+        display: none;
+    }
+
+    #burguerIcon {
+        display: block;
+    }
+    .cardssurgimientosanjovr {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-auto-columns: 1fr;
+        gap: 1em 1em;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "card4"
+            "card5";
+    }
+    .card4 {
+        grid-area: card4;
+    }
+    .card4 img {
+        width: 100% !important;
+    }
+    
+    #navsanjovr {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Inicialmente oculto fuera del área visible */
+        height: 100%;
+        width: 60%; /* Ancho del menú */
+        background-color: grey; /* Color de fondo del menú */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del menú */
+        transition: right 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; /* Alinea los elementos a la derecha */
+        padding: 1rem;
+        z-index: 20;
+    }
+    #navsanjovr ul{
+        display: block;
+    }
+    .navLinks li {
+        margin-bottom: 1rem; /* Espaciado entre elementos del menú */
+    }
+    #cerrarMenu{
+        display: block;
+    }
+    
 }
