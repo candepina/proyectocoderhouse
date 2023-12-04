@@ -48,7 +48,7 @@ body{
                 list-style: none;
                 padding: 0;
                 display: flex;
-
+                margin-bottom: 0px;
                 li{
                     display: inline-block;
                     /*Para que estén uno al lado del otro*/
@@ -287,6 +287,8 @@ body{
   }
 
   .boxcontainer {
+    display: grid;
+    justify-items: center;
     .cajamateria {
       width: 350px;
       height: 350px;
@@ -461,14 +463,15 @@ footer {
         z-index: 20;
     }
 
-    #burguerIcon {
-        display: block;
-    }
+    
     header{
         align-items: center;
     }
     #cerrarMenu{
         display: block;
+    }
+    #burguerIcon{
+        color: white;
     }
 }
 
@@ -558,6 +561,9 @@ footer {
     }
     #cerrarMenu{
         display: block;
+    }
+    #burguerIcon{
+        color: white;
     }
     
 }

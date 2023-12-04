@@ -44,6 +44,7 @@ body header nav ul {
   list-style: none;
   padding: 0;
   display: flex;
+  margin-bottom: 0px;
 }
 body header nav ul li {
   display: inline-block;
@@ -244,6 +245,10 @@ body footer {
   font-weight: 800;
   text-shadow: 1px 1px 5px white;
 }
+.mainvideos .boxcontainer {
+  display: grid;
+  justify-items: center;
+}
 .mainvideos .boxcontainer .cajamateria {
   width: 350px;
   height: 350px;
@@ -404,14 +409,14 @@ footer {
     padding: 1rem;
     z-index: 20;
   }
-  #burguerIcon {
-    display: block;
-  }
   header {
     align-items: center;
   }
   #cerrarMenu {
     display: block;
+  }
+  #burguerIcon {
+    color: white;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -485,6 +490,9 @@ footer {
   }
   #cerrarMenu {
     display: block;
+  }
+  #burguerIcon {
+    color: white;
   }
 }
 
