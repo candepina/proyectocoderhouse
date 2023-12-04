@@ -300,9 +300,6 @@ footer {
 
 @media only screen and (min-width: 1274px) {
   /*COMPUTADOR*/
-  header {
-    align-items: baseline;
-  }
   /*todo lo que sea +1200 se va a ver así*/
   .boxcontainer {
     display: grid;
