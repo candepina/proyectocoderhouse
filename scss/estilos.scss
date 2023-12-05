@@ -335,16 +335,18 @@ footer {
     div{
         font-weight: 600;
         color: black;
+        
         div{
             background-color: #a31c13;
             margin: 0 auto;
             max-width: 90%;
             text-align: center;
+            
             section{
+                margin-top: 1em;
                 height: 350px;
                 max-width: 100%;
                 .formularioisesion container-fluid{
-                    
                     flex-direction: column;
                     align-items: center;
                   

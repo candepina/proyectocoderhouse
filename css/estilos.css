@@ -326,6 +326,7 @@ footer {
   text-align: center;
 }
 .maininiciarsesion div div section {
+  margin-top: 1em;
   height: 350px;
   max-width: 100%;
 }
