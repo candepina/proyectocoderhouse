@@ -341,15 +341,17 @@ footer {
             margin: 0 auto;
             max-width: 90%;
             text-align: center;
+            border-radius: 10px;
             
             section{
                 margin-top: 1em;
                 height: 350px;
                 max-width: 100%;
+                
                 .formularioisesion container-fluid{
                     flex-direction: column;
                     align-items: center;
-                  
+                    
                     label {
                       margin-top: 1em;
                       font-family: 'Poppins', sans-serif;
