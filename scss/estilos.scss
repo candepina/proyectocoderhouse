@@ -1,7 +1,7 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,11 +9,34 @@
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
 }
-#burguerIcon{
-    display:none;
+
+$bordo: #a31c13;
+$rojo: #9e312a;
+$gris: #333;
+$dorado: rgba(255, 165, 2, 0.50);
+$celeste: rgba(59, 108, 163, 0.959);
+$turquesa: #1d7469;
+$azuloscuro: rgba(0, 0, 0, 0.1);
+
+@mixin estilo-titulos {
+    text-align: center;
+    padding-bottom: 0.5em;
+    margin: 0 auto;
+    background: none;
+    color: $bordo;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 10px;
+    font-size: 50px;
+    font-weight: 800;
+    text-shadow: 1px 1px 5px white;
 }
+
+#burguerIcon {
+    display: none;
+}
+
 //INDEX
-body{
+body {
     background-color: black !important;
     margin: 0;
     width: 100%;
@@ -21,103 +44,108 @@ body{
     flex-direction: column;
     min-height: 100vh;
 
-    header{
+    header {
         background-color: black;
         display: flex;
         justify-content: space-between;
         height: 85px;
         padding: 5px 10%;
 
-        div{
+        div {
 
-            a{
+            a {
 
-                img{
+                img {
                     max-width: 100%;
                     height: auto;
-                    &:hover{
+
+                    &:hover {
                         transform: scale(1.1);
-                    } 
+                    }
                 }
             }
         }
-        nav{
+
+        nav {
             display: flex;
             align-items: end;
-            ul{
+
+            ul {
                 list-style: none;
                 padding: 0;
                 display: flex;
                 margin-bottom: 0px;
-                li{
+
+                li {
                     display: inline-block;
                     /*Para que estén uno al lado del otro*/
                     padding: 0 20px;
-                    &:hover{
+
+                    &:hover {
                         transform: scale(1.1)
                     }
 
-                    a{
+                    a {
                         font-size: 700;
                         color: white;
                         text-decoration: none;
                         transition: all 0.5s ease-in-out;
-                        &:hover{
-                            color: #A31C13;
+
+                        &:hover {
+                            color: $bordo;
                             transition: all 0.5s ease-in-out;
                         }
                     }
                 }
             }
-            button{
-                background-color: #333; /* Color de fondo del botón */
-                color: white; /* Color del texto del botón */
+
+            button {
+                background-color: $gris;
+                /* Color de fondo del botón */
+                color: white;
+                /* Color del texto del botón */
                 border: none;
                 padding: 0.5rem 1rem;
                 cursor: pointer;
                 border-radius: 5px;
                 display: none;
-                &:hover{
-                    background-color: #9e312a;
+
+                &:hover {
+                    background-color: $rojo;
                 }
             }
 
         }
+
         #navSanjoVR.mostrar {
-            right: 0; /* Muestra el menú moviéndolo hacia la derecha */
+            right: 0;
+            /* Muestra el menú moviéndolo hacia la derecha */
         }
     }
 
-//TERMINA EL ESTILO PARA EL NAV COMUN
+    //TERMINA EL ESTILO PARA EL NAV COMUN
 
-//EMPIEZA ESTILO PARA EL MAIN DEL INDEX
+    //EMPIEZA ESTILO PARA EL MAIN DEL INDEX
 
-    .mainIndex{
+    .mainIndex {
         display: block;
+
         //PRIMERA IMAGEN DE LOS VR, LOS GRISES.
-        img{
+        img {
             padding: 0px;
             margin: 0px;
             width: 100%;
         }
 
-        h1{
-            text-align: center;
-            padding-bottom: 1em;
-            margin: 0 auto;
-            background: none;
-            color: #A31C13;
-            font-family: 'Poppins', sans-serif;
-            letter-spacing: 10px;
-            font-size: 50px;
-            font-weight: 800;
-            text-shadow: 1px 1px 5px white;
+        h1 {
+            @include estilo-titulos();
         }
 
-        div{
+        div {
             display: flex;
             justify-content: center;
-            h2{
+
+            h2 {
                 color: white;
                 font-family: 'Poppins', sans-serif;
                 font-weight: 700;
@@ -126,11 +154,13 @@ body{
                 padding: 20px;
             }
         }
-        a{
+
+        a {
             text-decoration: none;
             display: flex;
             justify-content: center;
-            button{
+
+            button {
                 background: black;
                 border-radius: 20px;
                 color: white;
@@ -138,22 +168,25 @@ body{
                 font-size: 16px;
                 transition: all 0.5s ease-in-out;
                 margin-bottom: 100px;
-                &:hover{
-                    color: #A31C13;
-                    box-shadow: 0px 4px 20px rgba(255, 165, 2, 0.50);
+
+                &:hover {
+                    color: $bordo;
+                    box-shadow: 0px 4px 20px $dorado;
                     transition: all 0.5s ease-in-out;
                 }
             }
         }
-        img{
+
+        img {
             max-width: 100%;
             width: 100%;
             opacity: 50%;
             padding-top: 100px;
             padding-bottom: 100px;
         }
-        section{
-            h2{
+
+        section {
+            h2 {
                 text-align: center;
                 padding-bottom: 1em;
                 margin: 0 auto;
@@ -163,20 +196,23 @@ body{
                 letter-spacing: 10px;
                 font-size: 35px;
                 font-weight: 800;
-                
+
             }
-            div{
-                div{
-                    background-color: #050505 !important;
-                    color: #A31C13 !important;
-                    img{
+
+            div {
+                div {
+                    background-color: black !important;
+                    color: $bordo !important;
+
+                    img {
                         height: 430px;
                     }
                 }
             }
         }
     }
-    footer{
+
+    footer {
         color: white;
         text-align: center;
         margin-top: 10px;
@@ -187,214 +223,218 @@ body{
 .mainSobreVR {
     color: white;
     padding: 20px;
-  
+
     .titulo {
-      text-align: center;
-      padding-bottom: 0.5em;
-      margin: 0 auto;
-      background: none;
-      color: #a31c13;
-      font-family: 'Poppins', sans-serif;
-      letter-spacing: 10px;
-      font-size: 50px;
-      font-weight: 800;
-      text-shadow: 1px 1px 5px white;
+        @include estilo-titulos();
     }
-  
+
     section {
-      h2 {
-        text-align: center;
-        padding: 1em;
-        margin: 0 auto;
-        background: none;
-        color: #a31c13;
-        font-family: 'Poppins', sans-serif;
-        letter-spacing: 10px;
-        font-size: 50px;
-        font-weight: 800;
-        text-shadow: 1px 1px 5px white;
-      }
-  
-      .cardsObjetivo{
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 2em 3em;
-  
-        div {
-          box-sizing: border-box;
-          border-radius: 20px;
-  
-          &:nth-child(1) {
-            background-color: rgb(184, 161, 30);
+        h2 {
+            text-align: center;
             padding: 1em;
-          }
-  
-          &:nth-child(2) {
-            background-color: #a31c13;
-            padding: 1em;
-          }
-  
-          &:nth-child(3) {
-            background-color: rgba(59, 108, 163, 0.959);
-            padding: 1em;
-          }
+            margin: 0 auto;
+            background: none;
+            color: $bordo;
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: 10px;
+            font-size: 50px;
+            font-weight: 800;
+            text-shadow: 1px 1px 5px white;
         }
-      }
-  
-      .cardsSurgimiento {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        gap: 1em 1em;
-        padding-right: 1em;
-        grid-template-areas: "card4 card5";
-  
-        div {
-          &.card4 {
-            grid-area: card4;
-            img {
-              width: 100%;
+
+        .cardsObjetivo {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 2em 3em;
+
+            div {
+                box-sizing: border-box;
+                border-radius: 20px;
+
+                &:nth-child(1) {
+                    background-color: $dorado;
+                    padding: 1em;
+                }
+
+                &:nth-child(2) {
+                    background-color: $rojo;
+                    padding: 1em;
+                }
+
+                &:nth-child(3) {
+                    background-color: $celeste;
+                    padding: 1em;
+                }
             }
-          }
-  
-          &.card5 {
-            grid-area: card5;
-            background-color: #a31c13;
-            box-sizing: border-box;
-            border-radius: 20px;
-            padding: 1em;
-          }
         }
-      }
+
+        .cardsSurgimiento {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 1em 1em;
+            padding-right: 1em;
+            grid-template-areas: "card4 card5";
+
+            div {
+                &.card4 {
+                    grid-area: card4;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                &.card5 {
+                    grid-area: card5;
+                    background-color: $rojo;
+                    box-sizing: border-box;
+                    border-radius: 20px;
+                    padding: 1em;
+                }
+            }
+        }
     }
-  
+
     footer {
-      color: white;
-      text-align: center;
-      margin-top: 10px;
+        color: white;
+        text-align: center;
+        margin-top: 10px;
     }
-  }
-  
+}
+
 //EMPIEZA ESTILO DE VIDEOS.HTML
 .mainVideos {
-  .titulo {
-    text-align: center;
-    padding-bottom: 1em;
-    margin: 0 auto;
-    background: none;
-    color: #a31c13;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 10px;
-    font-size: 50px;
-    font-weight: 800;
-    text-shadow: 1px 1px 5px white;
-  }
-
-  .boxContainer {
-    display: grid;
-    justify-items: center;
-    .cajaMateria {
-      width: 350px;
-      height: 350px;
-      margin: 0.5rem;
-      border-radius: 0.5em;
-      transition: all 0.5s ease-in-out;
-      text-align: center;
-      &:hover {
-        box-shadow: 0px 4px 25px white;
-      }
+    .titulo {
+        @include estilo-titulos();
     }
 
-    .box1 { grid-area: box1; background-color: red;}
-    .box2 { grid-area: box2; background-color: red; }
-    .box3 { grid-area: box3; background-color: red; }
-    .box4 { grid-area: box4; background-color: blue; }
-    .box5 { grid-area: box5; background-color: blue; }
-    .box6 { grid-area: box6; background-color: blue; }
-    .box7 { grid-area: box7; background-color: yellow; }
-    .box8 { grid-area: box8; background-color: yellow; }
-    .box9 { grid-area: box9; background-color: yellow; }
-  }
+    .boxContainer {
+        display: grid;
+        justify-items: center;
+
+        .cajaMateria {
+            width: 350px;
+            height: 350px;
+            margin: 0.5rem;
+            border-radius: 0.5em;
+            transition: all 0.5s ease-in-out;
+            text-align: center;
+
+            &:hover {
+                box-shadow: 0px 4px 25px white;
+            }
+        }
+
+        .box1 {
+            grid-area: box1;
+            background-color: red;
+        }
+
+        .box2 {
+            grid-area: box2;
+            background-color: red;
+        }
+
+        .box3 {
+            grid-area: box3;
+            background-color: red;
+        }
+
+        .box4 {
+            grid-area: box4;
+            background-color: blue;
+        }
+
+        .box5 {
+            grid-area: box5;
+            background-color: blue;
+        }
+
+        .box6 {
+            grid-area: box6;
+            background-color: blue;
+        }
+
+        .box7 {
+            grid-area: box7;
+            background-color: yellow;
+        }
+
+        .box8 {
+            grid-area: box8;
+            background-color: yellow;
+        }
+
+        .box9 {
+            grid-area: box9;
+            background-color: yellow;
+        }
+    }
 }
 
 footer {
-  color: white;
-  text-align: center;
-  margin-top: 10px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
 }
+
 //EMPIEZA ESTILO DEL MAIN DE INICIAR SESIÓN
-.mainIniciarsesion{
+.mainIniciarsesion {
     .titulo {
-        text-align: center;
-        padding-bottom: 1em;
-        margin: 0 auto;
-        background: none;
-        color: #a31c13;
-        font-family: 'Poppins', sans-serif;
-        letter-spacing: 10px;
-        font-size: 50px;
-        font-weight: 800;
-        text-shadow: 1px 1px 5px white;
+        @include estilo-titulos();
     }
-    div{
+
+    div {
         font-weight: 600;
         color: black;
-        
-        div{
-            background-color: #a31c13;
+
+        div {
+            background-color: $bordo;
             margin: 0 auto;
             max-width: 90%;
             text-align: center;
             border-radius: 10px;
-            
-            section{
+
+            section {
                 margin-top: 1em;
                 height: 350px;
                 max-width: 100%;
-                
-                .formularioIs container-fluid{
+
+                .formularioIs container-fluid {
                     flex-direction: column;
                     align-items: center;
-                    
+
                     label {
-                      margin-top: 1em;
-                      font-family: 'Poppins', sans-serif;
-                      font-size: 25px;
-                      text-align: center;
-                      margin-bottom: 0.5em;
-                      color: black;
+                        margin-top: 1em;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 25px;
+                        text-align: center;
+                        margin-bottom: 0.5em;
+                        color: black;
                     }
                 }
+
                 .botonIniciarSesion {
                     margin-top: 1em;
-                    background-color: #1d7469 !important;
-                
+                    background-color: $turquesa !important;
+
                     &:hover {
-                          box-shadow: 0px 4px 25px white !important;
-                          transition: all 0.5s ease-in-out !important;
-                          background-color: #33b9a9 !important;
-                      }
-                  }  
+                        box-shadow: 0px 4px 25px white !important;
+                        transition: all 0.5s ease-in-out !important;
+                        background-color: $turquesa !important;
+                    }
+                }
 
             }
         }
     }
-    
+
 }
 
 .mainContacto {
     .titulo {
-        text-align: center;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        margin: 0 auto;
-        background: none;
-        color: #a31c13;
-        font-family: 'Poppins', sans-serif;
-        letter-spacing: 10px;
-        font-size: 50px;
-        font-weight: 800;
-        text-shadow: 1px 1px 5px white;
+        @include estilo-titulos();
     }
 
     .infoContainer {
@@ -405,7 +445,7 @@ footer {
             text-align: center;
 
             h2 {
-                color: #A31C13;
+                color: $bordo;
                 font-weight: 600;
             }
 
@@ -418,13 +458,15 @@ footer {
     }
 
     .formularioContacto {
-        background-color: #33b9a9 ;
+        background-color: $turquesa ;
         margin-top: 1em;
         height: 500px;
         max-width: 100%;
         border-radius: 10px;
-        div{
+
+        div {
             padding: 1em;
+
             label {
                 margin-top: 1em;
                 font-family: 'Poppins', sans-serif;
@@ -438,17 +480,17 @@ footer {
             textarea {
                 height: 100%;
             }
-        }         
-        
+        }
+
 
         button.botonEnviar {
             margin: 1em;
-            background-color: #1d7469 !important;
+            background-color: $celeste !important;
 
             &:hover {
                 box-shadow: 0px 4px 25px white !important;
                 transition: all 0.5s ease-in-out !important;
-                background-color: #33b9a9 !important;
+                background-color: $turquesa !important;
             }
         }
     }
@@ -469,12 +511,13 @@ footer {
 
 @media only screen and (min-width: 1274px) {
     /*COMPUTADOR*/
-    
-    
+
+
     /*todo lo que sea +1200 se va a ver así*/
-    #surgimiento{
+    #surgimiento {
         padding-top: 1em;
     }
+
     .boxContainer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -487,50 +530,54 @@ footer {
             "box4 box5 box6"
             "box7 box8 box9";
     }
-    
+
     .cardsSurgimiento {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        grid-auto-columns: 1fr!important;
+        grid-auto-columns: 1fr !important;
         gap: 1em 1em;
         padding-right: 1em;
         grid-auto-flow: row;
         grid-template-areas:
-        "card4 card5"!important;
+            "card4 card5" !important;
     }
+
     .card4 {
         grid-area: card4;
     }
+
     .card4 img {
         width: 100%;
     }
+
     .card5 {
         grid-area: card5;
-        background-color: #A31C13;
+        background-color: $bordo;
         box-sizing: border-box;
         border-radius: 20px;
     }
 
     .lentesVr img {
         max-width: 80%;
-            height: 900px;
+        height: 900px;
     }
 
     #burguerIcon {
         display: none;
     }
-  
-    .boton{
+
+    .boton {
         width: 464px;
         max-width: 100%;
         height: 77px;
     }
-    
-    #cerrarMenu{
+
+    #cerrarMenu {
         display: none !important;
     }
-    #navSanjoVR{
+
+    #navSanjoVR {
         display: flex !important;
         align-items: center;
     }
@@ -540,9 +587,10 @@ footer {
 @media only screen and (min-width: 768px) and (max-width: 1273px) {
 
     /*TABLET*/
-    #surgimiento{
+    #surgimiento {
         padding-top: 1em;
     }
+
     .boxContainer {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -557,6 +605,7 @@ footer {
             "box7 box8"
             "box9";
     }
+
     .cardsSurgimiento {
         display: grid;
         grid-template-columns: 1fr;
@@ -569,46 +618,59 @@ footer {
             "card4"
             "card5";
     }
-    .boton{
-       width: 350px;
-       max-width: 80%;
+
+    .boton {
+        width: 350px;
+        max-width: 80%;
     }
+
     .card4 {
         grid-area: card4;
     }
+
     .card4 img {
         width: 100% !important;
     }
+
     .lentesVr img {
         height: 100%;
     }
+
     .logo img {
-        max-width: 80%; 
+        max-width: 80%;
     }
+
     #navSanjoVR {
         position: fixed;
         top: 0;
-        right: -100%; /* Inicialmente oculto fuera del área visible */
+        right: -100%;
+        /* Inicialmente oculto fuera del área visible */
         height: 100%;
-        width: 80%; /* Ancho del menú */
-        background-color: grey; /* Color de fondo del menú */
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del menú */
+        width: 80%;
+        /* Ancho del menú */
+        background-color: grey;
+        /* Color de fondo del menú */
+        box-shadow: 0 0 10px $azuloscuro;
+        /* Sombra del menú */
         transition: right 0.3s ease-in-out;
         display: flex;
         flex-direction: column;
-        align-items: flex-end; /* Alinea los elementos a la derecha */
+        align-items: flex-end;
+        /* Alinea los elementos a la derecha */
         padding: 1rem;
         z-index: 20;
     }
 
-    
-    header{
+
+    header {
         align-items: center;
     }
-    #cerrarMenu{
+
+    #cerrarMenu {
         display: block;
     }
-    #burguerIcon{
+
+    #burguerIcon {
         color: white;
     }
 }
@@ -616,22 +678,28 @@ footer {
 @media only screen and (max-width: 767px) {
 
     /*DISPOSITIVO MOVIL*/
-    .maincontacto .titulo{
+    .maincontacto .titulo {
         font-size: 150%;
     }
-    .maincontacto h2,h3{
+
+    .maincontacto h2,
+    h3 {
         font-size: 30px;
     }
-    #surgimiento{
-        padding:1em;
+
+    #surgimiento {
+        padding: 1em;
         font-size: 150%;
     }
-    #sanjovr_titles_style{
+
+    #sanjovr_titles_style {
         font-size: 150%;
     }
-    header{
+
+    header {
         align-items: center;
     }
+
     .boxContainer {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -649,14 +717,17 @@ footer {
             "box8"
             "box9";
     }
-    .boton{
+
+    .boton {
         width: 200px;
         max-width: 100%;
         height: 77px;
-     }
-    .logo img {
-        max-width: 70%; 
     }
+
+    .logo img {
+        max-width: 70%;
+    }
+
     .mainIndex {
         text-align: center;
         width: 100%;
@@ -671,6 +742,7 @@ footer {
     #burguerIcon {
         display: block;
     }
+
     #cardsSurgimiento {
         display: grid;
         grid-template-columns: 1fr;
@@ -682,39 +754,51 @@ footer {
             "card4"
             "card5";
     }
+
     .card4 {
         grid-area: card4;
     }
+
     .card4 img {
         width: 100% !important;
     }
-    
+
     #navSanjoVR {
         position: fixed;
         top: 0;
-        right: -100%; /* Inicialmente oculto fuera del área visible */
+        right: -100%;
+        /* Inicialmente oculto fuera del área visible */
         height: 100%;
-        width: 60%; /* Ancho del menú */
-        background-color: grey; /* Color de fondo del menú */
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del menú */
+        width: 60%;
+        /* Ancho del menú */
+        background-color: grey;
+        /* Color de fondo del menú */
+        box-shadow: 0 0 10px $azuloscuro;
+        /* Sombra del menú */
         transition: right 0.3s ease-in-out;
         display: flex;
         flex-direction: column;
-        align-items: flex-end; /* Alinea los elementos a la derecha */
+        align-items: flex-end;
+        /* Alinea los elementos a la derecha */
         padding: 1rem;
         z-index: 20;
     }
-    #navSanjoVR ul{
+
+    #navSanjoVR ul {
         display: block;
     }
+
     .navLinks li {
-        margin-bottom: 1rem; /* Espaciado entre elementos del menú */
+        margin-bottom: 1rem;
+        /* Espaciado entre elementos del menú */
     }
-    #cerrarMenu{
+
+    #cerrarMenu {
         display: block;
     }
-    #burguerIcon{
+
+    #burguerIcon {
         color: white;
     }
-    
+
 }
