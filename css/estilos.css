@@ -8,6 +8,7 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
+  text-decoration: none;
 }
 
 #burguerIcon {
@@ -80,7 +81,7 @@ body header nav button:hover {
 }
 body header #navSanjoVR.mostrar {
   right: 0;
-  /* Muestra el menú moviéndolo hacia la derecha */
+  /* Lo q muestra el menú moviéndolo hacia la derecha */
 }
 body .mainIndex {
   display: block;
@@ -196,6 +197,7 @@ body footer {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 2em 3em;
+  text-align: center;
 }
 .mainSobreVR section .cardsObjetivo div {
   box-sizing: border-box;
@@ -234,6 +236,10 @@ body footer {
   border-radius: 20px;
   padding: 1em;
 }
+.mainSobreVR section .cardsSurgimiento div.card5 h3 {
+  font-size: 26px;
+  letter-spacing: 1px;
+}
 .mainSobreVR footer {
   color: white;
   text-align: center;
@@ -270,6 +276,7 @@ body footer {
 .mainVideos .boxContainer .box1 {
   grid-area: box1;
   background-color: red;
+  color: black;
 }
 .mainVideos .boxContainer .box2 {
   grid-area: box2;
@@ -388,10 +395,10 @@ footer {
 .mainContacto .infoContainer .redes h3 {
   color: white;
   font-size: 20px;
-  padding-bottom: 4em;
+  padding-bottom: 20px;
 }
 .mainContacto .formularioContacto {
-  background-color: #1d7469;
+  background-color: rgba(59, 108, 163, 0.959);
   margin-top: 1em;
   height: 500px;
   max-width: 100%;
@@ -414,12 +421,12 @@ footer {
 }
 .mainContacto .formularioContacto button.botonEnviar {
   margin: 1em;
-  background-color: rgba(59, 108, 163, 0.959) !important;
+  background-color: #a31c13 !important;
 }
 .mainContacto .formularioContacto button.botonEnviar:hover {
   box-shadow: 0px 4px 25px white !important;
   transition: all 0.5s ease-in-out !important;
-  background-color: #1d7469 !important;
+  background-color: #9e312a !important;
 }
 
 @media only screen and (min-width: 1274px) {
@@ -427,6 +434,10 @@ footer {
   /*todo lo que sea +1200 se va a ver así*/
   #surgimiento {
     padding-top: 1em;
+  }
+  .mainContacto a {
+    text-decoration: none;
+    color: white;
   }
   .boxContainer {
     display: grid;
@@ -484,6 +495,10 @@ footer {
   #surgimiento {
     padding-top: 1em;
   }
+  .mainContacto a {
+    text-decoration: none;
+    color: white;
+  }
   .boxContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -523,7 +538,7 @@ footer {
     position: fixed;
     top: 0;
     right: -100%;
-    /* Inicialmente oculto fuera del área visible */
+    /* Inicialmente empiexa oculto fuera del área visible */
     height: 100%;
     width: 80%;
     /* Ancho del menú */
@@ -535,7 +550,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    /* Alinea los elementos a la derecha */
+    /* Lo q alinea los elementos a la derecha */
     padding: 1rem;
     z-index: 20;
   }
@@ -551,6 +566,10 @@ footer {
 }
 @media only screen and (max-width: 767px) {
   /*DISPOSITIVO MOVIL*/
+  .mainContacto a {
+    text-decoration: none;
+    color: white;
+  }
   .maincontacto .titulo {
     font-size: 150%;
   }
@@ -615,9 +634,9 @@ footer {
     position: fixed;
     top: 0;
     right: -100%;
-    /* Inicialmente oculto fuera del área visible */
+    /* Inicialmente empiexa oculto fuera del área visible */
     height: 100%;
-    width: 60%;
+    width: 80%;
     /* Ancho del menú */
     background-color: grey;
     /* Color de fondo del menú */
@@ -627,7 +646,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    /* Alinea los elementos a la derecha */
+    /* Lo q alinea los elementos a la derecha */
     padding: 1rem;
     z-index: 20;
   }

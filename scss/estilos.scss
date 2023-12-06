@@ -8,6 +8,7 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
+    text-decoration: none;
 }
 
 $bordo: #a31c13;
@@ -30,7 +31,26 @@ $azuloscuro: rgba(0, 0, 0, 0.1);
     font-weight: 800;
     text-shadow: 1px 1px 5px white;
 }
-
+@mixin estilo-nav{
+    position: fixed;
+        top: 0;
+        right: -100%;
+        /* Inicialmente empiexa oculto fuera del área visible */
+        height: 100%;
+        width: 80%;
+        /* Ancho del menú */
+        background-color: grey;
+        /* Color de fondo del menú */
+        box-shadow: 0 0 10px $azuloscuro;
+        /* Sombra del menú */
+        transition: right 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        /* Lo q alinea los elementos a la derecha */
+        padding: 1rem;
+        z-index: 20;
+}
 #burguerIcon {
     display: none;
 }
@@ -119,7 +139,7 @@ body {
 
         #navSanjoVR.mostrar {
             right: 0;
-            /* Muestra el menú moviéndolo hacia la derecha */
+            /* Lo q muestra el menú moviéndolo hacia la derecha */
         }
     }
 
@@ -246,6 +266,7 @@ body {
             display: grid;
             grid-template-rows: 1fr 1fr 1fr;
             gap: 2em 3em;
+            text-align: center;
 
             div {
                 box-sizing: border-box;
@@ -291,6 +312,10 @@ body {
                     box-sizing: border-box;
                     border-radius: 20px;
                     padding: 1em;
+                    h3{
+                        font-size: 26px;
+                        letter-spacing: 1px;
+                    }
                 }
             }
         }
@@ -329,6 +354,7 @@ body {
         .box1 {
             grid-area: box1;
             background-color: red;
+            color:black;
         }
 
         .box2 {
@@ -384,7 +410,7 @@ footer {
     .titulo {
         @include estilo-titulos();
     }
-
+    
     div {
         font-weight: 600;
         color: black;
@@ -452,13 +478,13 @@ footer {
             h3 {
                 color: white;
                 font-size: 20px;
-                padding-bottom: 4em;
+                padding-bottom: 20px;
             }
         }
     }
 
     .formularioContacto {
-        background-color: $turquesa ;
+        background-color: $celeste ;
         margin-top: 1em;
         height: 500px;
         max-width: 100%;
@@ -485,12 +511,12 @@ footer {
 
         button.botonEnviar {
             margin: 1em;
-            background-color: $celeste !important;
+            background-color: $bordo !important;
 
             &:hover {
                 box-shadow: 0px 4px 25px white !important;
                 transition: all 0.5s ease-in-out !important;
-                background-color: $turquesa !important;
+                background-color: $rojo !important;
             }
         }
     }
@@ -517,7 +543,10 @@ footer {
     #surgimiento {
         padding-top: 1em;
     }
-
+    .mainContacto a{
+        text-decoration: none;
+        color:white;
+    }
     .boxContainer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -590,7 +619,10 @@ footer {
     #surgimiento {
         padding-top: 1em;
     }
-
+    .mainContacto a{
+        text-decoration: none;
+        color:white;
+    }
     .boxContainer {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -641,24 +673,7 @@ footer {
     }
 
     #navSanjoVR {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        /* Inicialmente oculto fuera del área visible */
-        height: 100%;
-        width: 80%;
-        /* Ancho del menú */
-        background-color: grey;
-        /* Color de fondo del menú */
-        box-shadow: 0 0 10px $azuloscuro;
-        /* Sombra del menú */
-        transition: right 0.3s ease-in-out;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        /* Alinea los elementos a la derecha */
-        padding: 1rem;
-        z-index: 20;
+        @include estilo-nav();
     }
 
 
@@ -678,6 +693,10 @@ footer {
 @media only screen and (max-width: 767px) {
 
     /*DISPOSITIVO MOVIL*/
+    .mainContacto a{
+        text-decoration: none;
+        color:white;
+    }
     .maincontacto .titulo {
         font-size: 150%;
     }
@@ -764,24 +783,7 @@ footer {
     }
 
     #navSanjoVR {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        /* Inicialmente oculto fuera del área visible */
-        height: 100%;
-        width: 60%;
-        /* Ancho del menú */
-        background-color: grey;
-        /* Color de fondo del menú */
-        box-shadow: 0 0 10px $azuloscuro;
-        /* Sombra del menú */
-        transition: right 0.3s ease-in-out;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        /* Alinea los elementos a la derecha */
-        padding: 1rem;
-        z-index: 20;
+        @include estilo-nav();
     }
 
     #navSanjoVR ul {
