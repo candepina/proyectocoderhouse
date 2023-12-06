@@ -153,8 +153,8 @@ body .mainIndex section h2 {
   font-weight: 800;
 }
 body .mainIndex section div div {
-  background-color: black !important;
-  color: #a31c13 !important;
+  background-color: black;
+  color: #a31c13;
 }
 body .mainIndex section div div img {
   height: 430px;
@@ -359,12 +359,12 @@ footer {
 }
 .mainIniciarsesion div div section .botonIniciarSesion {
   margin-top: 1em;
-  background-color: #1d7469 !important;
+  background-color: #1d7469;
 }
 .mainIniciarsesion div div section .botonIniciarSesion:hover {
-  box-shadow: 0px 4px 25px white !important;
-  transition: all 0.5s ease-in-out !important;
-  background-color: #1d7469 !important;
+  box-shadow: 0px 4px 25px white;
+  transition: all 0.5s ease-in-out;
+  background-color: #1d7469;
 }
 
 .mainContacto .titulo {
@@ -378,6 +378,7 @@ footer {
   font-size: 50px;
   font-weight: 800;
   text-shadow: 1px 1px 5px white;
+  font-size: 30px;
 }
 .mainContacto .infoContainer {
   margin: 0 auto;
@@ -390,6 +391,7 @@ footer {
 .mainContacto .infoContainer .redes h2 {
   color: #a31c13;
   font-weight: 600;
+  font-size: 25px;
 }
 .mainContacto .infoContainer .ubicacion h3,
 .mainContacto .infoContainer .redes h3 {
@@ -421,12 +423,12 @@ footer {
 }
 .mainContacto .formularioContacto button.botonEnviar {
   margin: 1em;
-  background-color: #a31c13 !important;
+  background-color: #a31c13;
 }
 .mainContacto .formularioContacto button.botonEnviar:hover {
-  box-shadow: 0px 4px 25px white !important;
-  transition: all 0.5s ease-in-out !important;
-  background-color: #9e312a !important;
+  box-shadow: 0px 4px 25px white;
+  transition: all 0.5s ease-in-out;
+  background-color: #9e312a;
 }
 
 @media only screen and (min-width: 1274px) {
@@ -452,11 +454,11 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-auto-columns: 1fr !important;
+    grid-auto-columns: 1fr;
     gap: 1em 1em;
     padding-right: 1em;
     grid-auto-flow: row;
-    grid-template-areas: "card4 card5" !important;
+    grid-template-areas: "card4 card5";
   }
   .card4 {
     grid-area: card4;
@@ -483,10 +485,10 @@ footer {
     height: 77px;
   }
   #cerrarMenu {
-    display: none !important;
+    display: none;
   }
   #navSanjoVR {
-    display: flex !important;
+    display: flex;
     align-items: center;
   }
 }
@@ -526,7 +528,7 @@ footer {
     grid-area: card4;
   }
   .card4 img {
-    width: 100% !important;
+    width: 100%;
   }
   .lentesVr img {
     height: 100%;
@@ -540,7 +542,7 @@ footer {
     right: -100%;
     /* Inicialmente empiexa oculto fuera del área visible */
     height: 100%;
-    width: 80%;
+    width: 65%;
     /* Ancho del menú */
     background-color: grey;
     /* Color de fondo del menú */
@@ -628,7 +630,7 @@ footer {
     grid-area: card4;
   }
   .card4 img {
-    width: 100% !important;
+    width: 100%;
   }
   #navSanjoVR {
     position: fixed;
@@ -636,7 +638,7 @@ footer {
     right: -100%;
     /* Inicialmente empiexa oculto fuera del área visible */
     height: 100%;
-    width: 80%;
+    width: 65%;
     /* Ancho del menú */
     background-color: grey;
     /* Color de fondo del menú */

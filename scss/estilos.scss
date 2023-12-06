@@ -37,7 +37,7 @@ $azuloscuro: rgba(0, 0, 0, 0.1);
         right: -100%;
         /* Inicialmente empiexa oculto fuera del área visible */
         height: 100%;
-        width: 80%;
+        width: 65%;
         /* Ancho del menú */
         background-color: grey;
         /* Color de fondo del menú */
@@ -57,7 +57,7 @@ $azuloscuro: rgba(0, 0, 0, 0.1);
 
 //INDEX
 body {
-    background-color: black !important;
+    background-color: black!important;
     margin: 0;
     width: 100%;
     display: flex;
@@ -221,8 +221,8 @@ body {
 
             div {
                 div {
-                    background-color: black !important;
-                    color: $bordo !important;
+                    background-color: black; //important removido
+                    color: $bordo; //important removido
 
                     img {
                         height: 430px;
@@ -443,12 +443,12 @@ footer {
 
                 .botonIniciarSesion {
                     margin-top: 1em;
-                    background-color: $turquesa !important;
+                    background-color: $turquesa;//important removido
 
                     &:hover {
-                        box-shadow: 0px 4px 25px white !important;
-                        transition: all 0.5s ease-in-out !important;
-                        background-color: $turquesa !important;
+                        box-shadow: 0px 4px 25px white ;//important removido
+                        transition: all 0.5s ease-in-out ;//important removido
+                        background-color: $turquesa ;//important removido
                     }
                 }
 
@@ -461,6 +461,7 @@ footer {
 .mainContacto {
     .titulo {
         @include estilo-titulos();
+        font-size: 30px;
     }
 
     .infoContainer {
@@ -473,6 +474,7 @@ footer {
             h2 {
                 color: $bordo;
                 font-weight: 600;
+                font-size: 25px;
             }
 
             h3 {
@@ -511,12 +513,12 @@ footer {
 
         button.botonEnviar {
             margin: 1em;
-            background-color: $bordo !important;
+            background-color: $bordo;//removí important
 
             &:hover {
-                box-shadow: 0px 4px 25px white !important;
-                transition: all 0.5s ease-in-out !important;
-                background-color: $rojo !important;
+                box-shadow: 0px 4px 25px white ;//removí important
+                transition: all 0.5s ease-in-out ;//removí important
+                background-color: $rojo ;//removí important
             }
         }
     }
@@ -564,12 +566,12 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        grid-auto-columns: 1fr !important;
+        grid-auto-columns: 1fr;//removí important
         gap: 1em 1em;
         padding-right: 1em;
         grid-auto-flow: row;
-        grid-template-areas:
-            "card4 card5" !important;
+        grid-template-areas://removí important
+            "card4 card5";
     }
 
     .card4 {
@@ -603,11 +605,11 @@ footer {
     }
 
     #cerrarMenu {
-        display: none !important;
+        display: none;//removí i
     }
 
     #navSanjoVR {
-        display: flex !important;
+        display: flex;//removí important
         align-items: center;
     }
 
@@ -661,7 +663,7 @@ footer {
     }
 
     .card4 img {
-        width: 100% !important;
+        width: 100%;//removí important
     }
 
     .lentesVr img {
@@ -779,7 +781,7 @@ footer {
     }
 
     .card4 img {
-        width: 100% !important;
+        width: 100%;//removí important
     }
 
     #navSanjoVR {
