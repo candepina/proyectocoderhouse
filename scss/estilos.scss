@@ -83,7 +83,7 @@ body{
             }
 
         }
-        #navsanjovr.mostrar {
+        #navSanjoVR.mostrar {
             right: 0; /* Muestra el menú moviéndolo hacia la derecha */
         }
     }
@@ -92,7 +92,7 @@ body{
 
 //EMPIEZA ESTILO PARA EL MAIN DEL INDEX
 
-    .mainindex{
+    .mainIndex{
         display: block;
         //PRIMERA IMAGEN DE LOS VR, LOS GRISES.
         img{
@@ -184,7 +184,7 @@ body{
 }
 
 //EMPIEZA ESTILO DEL MAIN DE SOBRE VR
-.mainsobrevr {
+.mainSobreVR {
     color: white;
     padding: 20px;
   
@@ -215,7 +215,7 @@ body{
         text-shadow: 1px 1px 5px white;
       }
   
-      .cardsobjetivosanjovr {
+      .cardsObjetivo{
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         gap: 2em 3em;
@@ -241,7 +241,7 @@ body{
         }
       }
   
-      .cardssurgimientosanjovr {
+      .cardsSurgimiento {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
@@ -276,7 +276,7 @@ body{
   }
   
 //EMPIEZA ESTILO DE VIDEOS.HTML
-.mainvideos {
+.mainVideos {
   .titulo {
     text-align: center;
     padding-bottom: 1em;
@@ -290,10 +290,10 @@ body{
     text-shadow: 1px 1px 5px white;
   }
 
-  .boxcontainer {
+  .boxContainer {
     display: grid;
     justify-items: center;
-    .cajamateria {
+    .cajaMateria {
       width: 350px;
       height: 350px;
       margin: 0.5rem;
@@ -323,7 +323,7 @@ footer {
   margin-top: 10px;
 }
 //EMPIEZA ESTILO DEL MAIN DE INICIAR SESIÓN
-.maininiciarsesion{
+.mainIniciarsesion{
     .titulo {
         text-align: center;
         padding-bottom: 1em;
@@ -352,7 +352,7 @@ footer {
                 height: 350px;
                 max-width: 100%;
                 
-                .formularioisesion container-fluid{
+                .formularioIs container-fluid{
                     flex-direction: column;
                     align-items: center;
                     
@@ -382,7 +382,7 @@ footer {
     
 }
 
-.maincontacto {
+.mainContacto {
     .titulo {
         text-align: center;
         padding-top: 1em;
@@ -397,7 +397,7 @@ footer {
         text-shadow: 1px 1px 5px white;
     }
 
-    .infocontainer {
+    .infoContainer {
         margin: 0 auto;
 
         .ubicacion,
@@ -417,7 +417,7 @@ footer {
         }
     }
 
-    .formulariocontacto {
+    .formularioContacto {
         background-color: #33b9a9 ;
         margin-top: 1em;
         height: 500px;
@@ -475,7 +475,7 @@ footer {
     #surgimiento{
         padding-top: 1em;
     }
-    .boxcontainer {
+    .boxContainer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -488,7 +488,7 @@ footer {
             "box7 box8 box9";
     }
     
-    .cardssurgimientosanjovr {
+    .cardsSurgimiento {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
@@ -530,7 +530,7 @@ footer {
     #cerrarMenu{
         display: none !important;
     }
-    #navsanjovr{
+    #navSanjoVR{
         display: flex !important;
         align-items: center;
     }
@@ -543,7 +543,7 @@ footer {
     #surgimiento{
         padding-top: 1em;
     }
-    .boxcontainer {
+    .boxContainer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -557,7 +557,7 @@ footer {
             "box7 box8"
             "box9";
     }
-    .cardssurgimientosanjovr {
+    .cardsSurgimiento {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -585,7 +585,7 @@ footer {
     .logo img {
         max-width: 80%; 
     }
-    #navsanjovr {
+    #navSanjoVR {
         position: fixed;
         top: 0;
         right: -100%; /* Inicialmente oculto fuera del área visible */
@@ -632,7 +632,7 @@ footer {
     header{
         align-items: center;
     }
-    .boxcontainer {
+    .boxContainer {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-auto-columns: 1fr;
@@ -657,7 +657,7 @@ footer {
     .logo img {
         max-width: 70%; 
     }
-    .mainindex {
+    .mainIndex {
         text-align: center;
         width: 100%;
         height: auto;
@@ -671,7 +671,7 @@ footer {
     #burguerIcon {
         display: block;
     }
-    #cardssurgimientosanjovr {
+    #cardsSurgimiento {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -689,7 +689,7 @@ footer {
         width: 100% !important;
     }
     
-    #navsanjovr {
+    #navSanjoVR {
         position: fixed;
         top: 0;
         right: -100%; /* Inicialmente oculto fuera del área visible */
@@ -704,7 +704,7 @@ footer {
         padding: 1rem;
         z-index: 20;
     }
-    #navsanjovr ul{
+    #navSanjoVR ul{
         display: block;
     }
     .navLinks li {
