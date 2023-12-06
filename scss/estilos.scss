@@ -461,7 +461,6 @@ footer {
 .mainContacto {
     .titulo {
         @include estilo-titulos();
-        font-size: 30px;
     }
 
     .infoContainer {
@@ -699,8 +698,8 @@ footer {
         text-decoration: none;
         color:white;
     }
-    .maincontacto .titulo {
-        font-size: 150%;
+    .mainContacto .titulo {
+      font-size: 30px;
     }
 
     .maincontacto h2,

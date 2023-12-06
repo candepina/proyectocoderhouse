@@ -378,7 +378,6 @@ footer {
   font-size: 50px;
   font-weight: 800;
   text-shadow: 1px 1px 5px white;
-  font-size: 30px;
 }
 .mainContacto .infoContainer {
   margin: 0 auto;
@@ -572,8 +571,8 @@ footer {
     text-decoration: none;
     color: white;
   }
-  .maincontacto .titulo {
-    font-size: 150%;
+  .mainContacto .titulo {
+    font-size: 30px;
   }
   .maincontacto h2,
   h3 {
