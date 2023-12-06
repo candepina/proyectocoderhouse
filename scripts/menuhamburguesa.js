@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const icon = document.querySelector("#burguerIcon");
-    const menu = document.querySelector("#navsanjovr");
+    const menu = document.querySelector("#navSanjoVR");
     const cerrarMenuBtn = document.getElementById("cerrarMenu");
 
     icon.addEventListener("click", () => {
