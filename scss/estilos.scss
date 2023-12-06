@@ -204,7 +204,7 @@ body{
     section {
       h2 {
         text-align: center;
-        padding-bottom: 1em;
+        padding: 1em;
         margin: 0 auto;
         background: none;
         color: #a31c13;
@@ -226,14 +226,17 @@ body{
   
           &:nth-child(1) {
             background-color: rgb(184, 161, 30);
+            padding: 1em;
           }
   
           &:nth-child(2) {
             background-color: #a31c13;
+            padding: 1em;
           }
   
           &:nth-child(3) {
             background-color: rgba(59, 108, 163, 0.959);
+            padding: 1em;
           }
         }
       }
@@ -241,10 +244,10 @@ body{
       .cardssurgimientosanjovr {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
         gap: 1em 1em;
         padding-right: 1em;
-        grid-template-areas: 'card4 card5' 'card4 card5';
+        grid-template-areas: "card4 card5";
   
         div {
           &.card4 {
@@ -259,6 +262,7 @@ body{
             background-color: #a31c13;
             box-sizing: border-box;
             border-radius: 20px;
+            padding: 1em;
           }
         }
       }
@@ -377,7 +381,9 @@ footer {
     }
     
 }
+.maincontacto container-fluid{
 
+}
 
 
 
@@ -396,6 +402,9 @@ footer {
     
     
     /*todo lo que sea +1200 se va a ver así*/
+    #surgimiento{
+        padding-top: 1em;
+    }
     .boxcontainer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -413,12 +422,12 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        grid-auto-columns: 1fr;
+        grid-auto-columns: 1fr!important;
         gap: 1em 1em;
         padding-right: 1em;
         grid-auto-flow: row;
         grid-template-areas:
-            "card4 card5";
+        "card4 card5"!important;
     }
     .card4 {
         grid-area: card4;
@@ -461,7 +470,9 @@ footer {
 @media only screen and (min-width: 768px) and (max-width: 1273px) {
 
     /*TABLET*/
-    
+    #surgimiento{
+        padding-top: 1em;
+    }
     .boxcontainer {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -535,6 +546,10 @@ footer {
 @media only screen and (max-width: 767px) {
 
     /*DISPOSITIVO MOVIL*/
+    #surgimiento{
+        padding-top: 1em;
+        font-size: 35px;
+    }
     header{
         align-items: center;
     }
@@ -577,7 +592,7 @@ footer {
     #burguerIcon {
         display: block;
     }
-    .cardssurgimientosanjovr {
+    #cardssurgimientosanjovr {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
