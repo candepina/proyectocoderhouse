@@ -137,7 +137,6 @@ body .mainIndex a button:hover {
 body .mainIndex img {
   max-width: 100%;
   width: 100%;
-  opacity: 50%;
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -157,7 +156,9 @@ body .mainIndex section div div {
   color: #a31c13;
 }
 body .mainIndex section div div img {
-  height: 430px;
+  margin: 0px;
+  padding: 0px;
+  height: 250px;
 }
 body footer {
   color: white;
@@ -275,40 +276,138 @@ body footer {
 }
 .mainVideos .boxContainer .box1 {
   grid-area: box1;
-  background-color: red;
-  color: black;
+  background-color: rgb(12, 11, 11);
+}
+.mainVideos .boxContainer .box1 p {
+  font-size: 30px;
+  color: white;
+  text-shadow: 0px 2px 2px #a31c13;
+  margin-top: 25px;
+}
+.mainVideos .boxContainer .box1 img {
+  height: 200px;
+  width: 300px;
+  margin-top: 1.5em;
 }
 .mainVideos .boxContainer .box2 {
   grid-area: box2;
-  background-color: red;
+  background-color: rgb(12, 11, 11);
+}
+.mainVideos .boxContainer .box2 p {
+  font-size: 30px;
+  color: white;
+  text-shadow: 0px 2px 2px #a31c13;
+  margin-top: 25px;
+}
+.mainVideos .boxContainer .box2 img {
+  height: 200px;
+  width: 300px;
+  margin-top: 1.5em;
 }
 .mainVideos .boxContainer .box3 {
   grid-area: box3;
-  background-color: red;
+  background-color: rgb(12, 11, 11);
+}
+.mainVideos .boxContainer .box3 p {
+  font-size: 30px;
+  color: white;
+  text-shadow: 0px 2px 2px #a31c13;
+  margin-top: 25px;
+}
+.mainVideos .boxContainer .box3 img {
+  height: 200px;
+  width: 300px;
+  margin-top: 1.5em;
 }
 .mainVideos .boxContainer .box4 {
   grid-area: box4;
-  background-color: blue;
+  background-color: rgb(12, 11, 11);
+}
+.mainVideos .boxContainer .box4 p {
+  font-size: 30px;
+  color: white;
+  text-shadow: 0px 2px 2px #a31c13;
+  margin-top: 25px;
+}
+.mainVideos .boxContainer .box4 img {
+  height: 200px;
+  width: 300px;
+  margin-top: 1.5em;
 }
 .mainVideos .boxContainer .box5 {
   grid-area: box5;
-  background-color: blue;
+  background-color: rgb(12, 11, 11);
+}
+.mainVideos .boxContainer .box5 p {
+  font-size: 30px;
+  color: white;
+  text-shadow: 0px 2px 2px #a31c13;
+  margin-top: 25px;
+}
+.mainVideos .boxContainer .box5 img {
+  height: 200px;
+  width: 300px;
+  margin-top: 1.5em;
 }
 .mainVideos .boxContainer .box6 {
   grid-area: box6;
-  background-color: blue;
+  background-color: rgb(12, 11, 11);
+}
+.mainVideos .boxContainer .box6 p {
+  font-size: 30px;
+  color: white;
+  text-shadow: 0px 2px 2px #a31c13;
+  margin-top: 25px;
+}
+.mainVideos .boxContainer .box6 img {
+  height: 200px;
+  width: 300px;
+  margin-top: 1.5em;
 }
 .mainVideos .boxContainer .box7 {
   grid-area: box7;
-  background-color: yellow;
+  background-color: rgb(12, 11, 11);
+}
+.mainVideos .boxContainer .box7 p {
+  font-size: 30px;
+  color: white;
+  text-shadow: 0px 2px 2px #a31c13;
+  margin-top: 25px;
+}
+.mainVideos .boxContainer .box7 img {
+  height: 200px;
+  width: 300px;
+  margin-top: 1.5em;
 }
 .mainVideos .boxContainer .box8 {
   grid-area: box8;
-  background-color: yellow;
+  background-color: rgb(12, 11, 11);
+}
+.mainVideos .boxContainer .box8 p {
+  font-size: 30px;
+  color: white;
+  text-shadow: 0px 2px 2px #a31c13;
+  margin-top: 25px;
+}
+.mainVideos .boxContainer .box8 img {
+  height: 200px;
+  width: 300px;
+  margin-top: 1.5em;
 }
 .mainVideos .boxContainer .box9 {
   grid-area: box9;
-  background-color: yellow;
+  background-color: rgb(12, 11, 11);
+}
+.mainVideos .boxContainer .box9 p {
+  font-size: 30px;
+  color: white;
+  text-shadow: 0px 2px 2px #a31c13;
+  margin-top: 25px;
+}
+.mainVideos .boxContainer .box9 img {
+  height: 200px;
+  width: 300px;
+  margin-top: 1.5em;
 }
 
 footer {
