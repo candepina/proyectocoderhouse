@@ -1,0 +1,175 @@
+//Estilos para VIDEOS
+.mainVideos {
+    .titulo {
+        @include estilo-titulos();
+    }
+
+    .boxContainer {
+        display: grid;
+        justify-items: center;
+
+        .cajaMateria {
+            width: 350px;
+            height: 350px;
+            margin: 0.5rem;
+            border-radius: 0.5em;
+            transition: all 0.5s ease-in-out;
+            text-align: center;
+
+            &:hover {
+                box-shadow: 0px 4px 25px white;
+            }
+        }
+
+        .box1 {
+            grid-area: box1;
+            background-color: rgb(12, 11, 11);
+            p{
+                font-size: 30px;
+                color:white;
+                text-shadow: 0px 2px 2px $bordo ;
+                margin-top: 25px;
+            }
+            img{
+                height: 200px;
+                width: 300px;
+                margin-top: 1.5em;
+            }
+        }
+
+        .box2 {
+            grid-area: box2;
+            background-color: rgb(12, 11, 11);
+            p{
+                font-size: 30px;
+                color:white;
+                text-shadow: 0px 2px 2px $bordo ;
+                margin-top: 25px;
+            }
+            img{
+                height: 200px;
+                width: 300px;
+                margin-top: 1.5em;
+            }
+        }
+
+        .box3 {
+            grid-area: box3;
+            background-color: rgb(12, 11, 11);
+            p{
+                font-size: 30px;
+                color:white;
+                text-shadow: 0px 2px 2px $bordo ;
+                margin-top: 25px;
+            }
+            img{
+                height: 200px;
+                width: 300px;
+                margin-top: 1.5em;
+            }
+            
+        }
+
+        .box4 {
+            grid-area: box4;
+            background-color: rgb(12, 11, 11);
+            p{
+                font-size: 30px;
+                color:white;
+                text-shadow: 0px 2px 2px $bordo ;
+                margin-top: 25px;
+            }
+            img{
+                height: 200px;
+                width: 300px;
+                margin-top: 1.5em;
+            }
+        }
+
+        .box5 {
+            grid-area: box5;
+            background-color: rgb(12, 11, 11);
+            p{
+                font-size: 30px;
+                color:white;
+                text-shadow: 0px 2px 2px $bordo ;
+                margin-top: 25px;
+            }
+            img{
+                height: 200px;
+                width: 300px;
+                margin-top: 1.5em;
+            }
+        }
+
+        .box6 {
+            grid-area: box6;
+            background-color: rgb(12, 11, 11);
+            p{
+                font-size: 30px;
+                color:white;
+                text-shadow: 0px 2px 2px $bordo ;
+                margin-top: 25px;
+            }
+            img{
+                height: 200px;
+                width: 300px;
+                margin-top: 1.5em;
+            }
+        }
+
+        .box7 {
+            grid-area: box7;
+            background-color: rgb(12, 11, 11);
+            p{
+                font-size: 30px;
+                color:white;
+                text-shadow: 0px 2px 2px $bordo ;
+                margin-top: 25px;
+            }
+            img{
+                height: 200px;
+                width: 300px;
+                margin-top: 1.5em;
+            }
+        }
+
+        .box8 {
+            grid-area: box8;
+            background-color: rgb(12, 11, 11);
+            p{
+                font-size: 30px;
+                color:white;
+                text-shadow: 0px 2px 2px $bordo ;
+                margin-top: 25px;
+            }
+            img{
+                height: 200px;
+                width: 300px;
+                margin-top: 1.5em;
+            }
+        }
+
+        .box9 {
+            grid-area: box9;
+            background-color: rgb(12, 11, 11);
+            p{
+                font-size: 30px;
+                color:white;
+                text-shadow: 0px 2px 2px $bordo ;
+                margin-top: 25px;
+            }
+            img{
+                height: 200px;
+                width: 300px;
+                margin-top: 1.5em;
+            }
+        }
+    }
+}
+
+footer {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}

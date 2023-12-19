@@ -1,0 +1,92 @@
+//Estilos para el INDEX
+.mainIndex {
+    display: block;
+
+    //PRIMERA IMAGEN DE LOS VR, LOS GRISES.
+    img {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+
+    h1 {
+        @include estilo-titulos();
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+
+        h2 {
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            letter-spacing: 5px;
+            font-size: 30px;
+            padding: 20px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+
+        button {
+            background: black;
+            border-radius: 20px;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            transition: all 0.5s ease-in-out;
+            margin-bottom: 100px;
+
+            &:hover {
+                color: $bordo;
+                box-shadow: 0px 4px 20px $dorado;
+                transition: all 0.5s ease-in-out;
+            }
+        }
+    }
+
+    img {
+        max-width: 100%;
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    section {
+        h2 {
+            text-align: center;
+            padding-bottom: 1em;
+            margin: 0 auto;
+            background: none;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: 10px;
+            font-size: 35px;
+            font-weight: 800;
+
+        }
+
+        div {
+            div {
+                background-color: black; //important removido
+                color: $bordo; //important removido
+                img {
+                    margin: 0px;
+                    padding: 0px;
+                    height: 250px;
+                    
+                }
+            }
+        }
+    }
+}
+
+footer {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}

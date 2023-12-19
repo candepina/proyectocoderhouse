@@ -2,96 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  text-decoration: none;
-}
-
-#burguerIcon {
-  display: none;
-}
-
-body {
-  background-color: black !important;
-  margin: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-body header {
-  background-color: black;
-  display: flex;
-  justify-content: space-between;
-  height: 85px;
-  padding: 5px 10%;
-}
-body header div a img {
-  max-width: 100%;
-  height: auto;
-}
-body header div a img:hover {
-  transform: scale(1.1);
-}
-body header nav {
-  display: flex;
-  align-items: end;
-}
-body header nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  margin-bottom: 0px;
-}
-body header nav ul li {
-  display: inline-block;
-  /*Para que estén uno al lado del otro*/
-  padding: 0 20px;
-}
-body header nav ul li:hover {
-  transform: scale(1.1);
-}
-body header nav ul li a {
-  font-size: 700;
-  color: white;
-  text-decoration: none;
-  transition: all 0.5s ease-in-out;
-}
-body header nav ul li a:hover {
-  color: #a31c13;
-  transition: all 0.5s ease-in-out;
-}
-body header nav button {
-  background-color: #333;
-  /* Color de fondo del botón */
-  color: white;
-  /* Color del texto del botón */
-  border: none;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  border-radius: 5px;
-  display: none;
-}
-body header nav button:hover {
-  background-color: #9e312a;
-}
-body header #navSanjoVR.mostrar {
-  right: 0;
-  /* Lo q muestra el menú moviéndolo hacia la derecha */
-}
-body .mainIndex {
+.mainIndex {
   display: block;
 }
-body .mainIndex img {
+.mainIndex img {
   padding: 0px;
   margin: 0px;
   width: 100%;
 }
-body .mainIndex h1 {
+.mainIndex h1 {
   text-align: center;
   padding-bottom: 0.5em;
   margin: 0 auto;
@@ -103,11 +22,11 @@ body .mainIndex h1 {
   font-weight: 800;
   text-shadow: 1px 1px 5px white;
 }
-body .mainIndex div {
+.mainIndex div {
   display: flex;
   justify-content: center;
 }
-body .mainIndex div h2 {
+.mainIndex div h2 {
   color: white;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -115,12 +34,12 @@ body .mainIndex div h2 {
   font-size: 30px;
   padding: 20px;
 }
-body .mainIndex a {
+.mainIndex a {
   text-decoration: none;
   display: flex;
   justify-content: center;
 }
-body .mainIndex a button {
+.mainIndex a button {
   background: black;
   border-radius: 20px;
   color: white;
@@ -129,18 +48,18 @@ body .mainIndex a button {
   transition: all 0.5s ease-in-out;
   margin-bottom: 100px;
 }
-body .mainIndex a button:hover {
+.mainIndex a button:hover {
   color: #a31c13;
   box-shadow: 0px 4px 20px rgba(255, 165, 2, 0.5);
   transition: all 0.5s ease-in-out;
 }
-body .mainIndex img {
+.mainIndex img {
   max-width: 100%;
   width: 100%;
   padding-top: 100px;
   padding-bottom: 100px;
 }
-body .mainIndex section h2 {
+.mainIndex section h2 {
   text-align: center;
   padding-bottom: 1em;
   margin: 0 auto;
@@ -151,16 +70,17 @@ body .mainIndex section h2 {
   font-size: 35px;
   font-weight: 800;
 }
-body .mainIndex section div div {
+.mainIndex section div div {
   background-color: black;
   color: #a31c13;
 }
-body .mainIndex section div div img {
+.mainIndex section div div img {
   margin: 0px;
   padding: 0px;
   height: 250px;
 }
-body footer {
+
+footer {
   color: white;
   text-align: center;
   margin-top: 10px;
@@ -207,14 +127,20 @@ body footer {
 .mainSobreVR section .cardsObjetivo div:nth-child(1) {
   background-color: rgba(255, 165, 2, 0.5);
   padding: 1em;
+  display: flex;
+  align-items: center;
 }
 .mainSobreVR section .cardsObjetivo div:nth-child(2) {
   background-color: #9e312a;
   padding: 1em;
+  display: flex;
+  align-items: center;
 }
 .mainSobreVR section .cardsObjetivo div:nth-child(3) {
   background-color: rgba(59, 108, 163, 0.959);
   padding: 1em;
+  display: flex;
+  align-items: center;
 }
 .mainSobreVR section .cardsSurgimiento {
   display: grid;
@@ -223,6 +149,8 @@ body footer {
   gap: 1em 1em;
   padding-right: 1em;
   grid-template-areas: "card4 card5";
+  padding: 0px;
+  margin: 0px;
 }
 .mainSobreVR section .cardsSurgimiento div.card4 {
   grid-area: card4;
@@ -236,10 +164,6 @@ body footer {
   box-sizing: border-box;
   border-radius: 20px;
   padding: 1em;
-}
-.mainSobreVR section .cardsSurgimiento div.card5 h3 {
-  font-size: 26px;
-  letter-spacing: 1px;
 }
 .mainSobreVR footer {
   color: white;
@@ -529,9 +453,100 @@ footer {
   background-color: #9e312a;
 }
 
+body {
+  background-color: black !important;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  height: 85px;
+  padding: 5px 10%;
+}
+body header div a img {
+  max-width: 100%;
+  height: auto;
+}
+body header div a img:hover {
+  transform: scale(1.1);
+}
+body header nav {
+  display: flex;
+  align-items: end;
+}
+body header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin-bottom: 0px;
+}
+body header nav ul li {
+  display: inline-block;
+  /*Para que estén uno al lado del otro*/
+  padding: 0 20px;
+}
+body header nav ul li:hover {
+  transform: scale(1.1);
+}
+body header nav ul li a {
+  font-size: 700;
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+body header nav ul li a:hover {
+  color: #a31c13;
+  transition: all 0.5s ease-in-out;
+}
+body header nav button {
+  background-color: #9e312a;
+  /* Color de fondo del botón */
+  color: white;
+  /* Color del texto del botón */
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  display: none;
+}
+body header nav button:hover {
+  background-color: #a31c13;
+  box-shadow: 0px 4px 25px white;
+}
+body header #navSanjoVR.mostrar {
+  right: 0;
+  /* Lo q muestra el menú moviéndolo hacia la derecha */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#burguerIcon {
+  display: none;
+}
+
 @media only screen and (min-width: 1274px) {
   /*COMPUTADOR*/
   /*todo lo que sea +1200 se va a ver así*/
+  .card5 h3 {
+    font-size: 26px;
+    letter-spacing: 2px;
+    line-height: 45px;
+  }
+  .card1, .card2, .card3 {
+    justify-content: center;
+  }
   #surgimiento {
     padding-top: 1em;
   }
@@ -642,7 +657,7 @@ footer {
     height: 100%;
     width: 65%;
     /* Ancho del menú */
-    background-color: grey;
+    background-color: #100e0e;
     /* Color de fondo del menú */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     /* Sombra del menú */
@@ -666,6 +681,15 @@ footer {
 }
 @media only screen and (max-width: 767px) {
   /*DISPOSITIVO MOVIL*/
+  .cardsObjetivo {
+    gap: 2em 3em;
+  }
+  .card1, .card2, .card3 {
+    height: 100px;
+  }
+  .card1 h3, .card2 h3, .card3 h3 {
+    font-size: 20px;
+  }
   .mainContacto a {
     text-decoration: none;
     color: white;
@@ -730,6 +754,10 @@ footer {
   .card4 img {
     width: 100%;
   }
+  .card5 h3 {
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
   #navSanjoVR {
     position: fixed;
     top: 0;
@@ -738,7 +766,7 @@ footer {
     height: 100%;
     width: 65%;
     /* Ancho del menú */
-    background-color: grey;
+    background-color: #100e0e;
     /* Color de fondo del menú */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     /* Sombra del menú */

@@ -1,0 +1,99 @@
+//Estilos para SOBREVR
+.mainSobreVR {
+    color: white;
+    padding: 20px;
+
+    .titulo {
+        @include estilo-titulos();
+    }
+
+    section {
+        h2 {
+            text-align: center;
+            padding: 1em;
+            margin: 0 auto;
+            background: none;
+            color: $bordo;
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: 10px;
+            font-size: 50px;
+            font-weight: 800;
+            text-shadow: 1px 1px 5px white;
+            
+        }
+
+        .cardsObjetivo {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 2em 3em;
+            text-align: center;
+
+            div {
+                box-sizing: border-box;
+                border-radius: 20px;
+
+                &:nth-child(1) {
+                    background-color: $dorado;
+                    padding: 1em;
+                    display: flex;
+                    align-items: center;
+        
+                    
+                }
+
+                &:nth-child(2) {
+                    background-color: $rojo;
+                    padding: 1em;
+                    display: flex;
+                    align-items: center;
+        
+                    
+                }
+
+                &:nth-child(3) {
+                    background-color: $celeste;
+                    padding: 1em;
+                    display: flex;
+                    align-items: center;
+        
+                    
+                }
+            }
+        }
+
+        .cardsSurgimiento {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 1em 1em;
+            padding-right: 1em;
+            grid-template-areas: "card4 card5";
+            padding: 0px;
+            margin: 0px;
+            div {
+                &.card4 {
+                    grid-area: card4;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                &.card5 {
+                    grid-area: card5;
+                    background-color: $rojo;
+                    box-sizing: border-box;
+                    border-radius: 20px;
+                    padding: 1em;
+                    
+                }
+            }
+        }
+    }
+
+    footer {
+        color: white;
+        text-align: center;
+        margin-top: 10px;
+    }
+}

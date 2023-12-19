@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import "variables";
+@import "mixins";
+@import "index";
+@import "sobrevr";
+@import "videos";
+@import "iniciarsesion";
+@import "contacto";
+@import "nav";
 
 * {
     box-sizing: border-box;
@@ -10,637 +18,21 @@
     font-size: 20px;
     text-decoration: none;
 }
-
-$bordo: #a31c13;
-$rojo: #9e312a;
-$gris: #333;
-$dorado: rgba(255, 165, 2, 0.50);
-$celeste: rgba(59, 108, 163, 0.959);
-$turquesa: #1d7469;
-$azuloscuro: rgba(0, 0, 0, 0.1);
-
-@mixin estilo-titulos {
-    text-align: center;
-    padding-bottom: 0.5em;
-    margin: 0 auto;
-    background: none;
-    color: $bordo;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 10px;
-    font-size: 50px;
-    font-weight: 800;
-    text-shadow: 1px 1px 5px white;
-}
-@mixin estilo-nav{
-    position: fixed;
-        top: 0;
-        right: -100%;
-        /* Inicialmente empiexa oculto fuera del área visible */
-        height: 100%;
-        width: 65%;
-        /* Ancho del menú */
-        background-color: grey;
-        /* Color de fondo del menú */
-        box-shadow: 0 0 10px $azuloscuro;
-        /* Sombra del menú */
-        transition: right 0.3s ease-in-out;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        /* Lo q alinea los elementos a la derecha */
-        padding: 1rem;
-        z-index: 20;
-}
 #burguerIcon {
     display: none;
 }
 
-//INDEX
-body {
-    background-color: black!important;
-    margin: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-
-    header {
-        background-color: black;
-        display: flex;
-        justify-content: space-between;
-        height: 85px;
-        padding: 5px 10%;
-
-        div {
-
-            a {
-
-                img {
-                    max-width: 100%;
-                    height: auto;
-
-                    &:hover {
-                        transform: scale(1.1);
-                    }
-                }
-            }
-        }
-
-        nav {
-            display: flex;
-            align-items: end;
-
-            ul {
-                list-style: none;
-                padding: 0;
-                display: flex;
-                margin-bottom: 0px;
-
-                li {
-                    display: inline-block;
-                    /*Para que estén uno al lado del otro*/
-                    padding: 0 20px;
-
-                    &:hover {
-                        transform: scale(1.1)
-                    }
-
-                    a {
-                        font-size: 700;
-                        color: white;
-                        text-decoration: none;
-                        transition: all 0.5s ease-in-out;
-
-                        &:hover {
-                            color: $bordo;
-                            transition: all 0.5s ease-in-out;
-                        }
-                    }
-                }
-            }
-
-            button {
-                background-color: $gris;
-                /* Color de fondo del botón */
-                color: white;
-                /* Color del texto del botón */
-                border: none;
-                padding: 0.5rem 1rem;
-                cursor: pointer;
-                border-radius: 5px;
-                display: none;
-
-                &:hover {
-                    background-color: $rojo;
-                }
-            }
-
-        }
-
-        #navSanjoVR.mostrar {
-            right: 0;
-            /* Lo q muestra el menú moviéndolo hacia la derecha */
-        }
-    }
-
-    //TERMINA EL ESTILO PARA EL NAV COMUN
-
-    //EMPIEZA ESTILO PARA EL MAIN DEL INDEX
-
-    .mainIndex {
-        display: block;
-
-        //PRIMERA IMAGEN DE LOS VR, LOS GRISES.
-        img {
-            padding: 0px;
-            margin: 0px;
-            width: 100%;
-        }
-
-        h1 {
-            @include estilo-titulos();
-        }
-
-        div {
-            display: flex;
-            justify-content: center;
-
-            h2 {
-                color: white;
-                font-family: 'Poppins', sans-serif;
-                font-weight: 700;
-                letter-spacing: 5px;
-                font-size: 30px;
-                padding: 20px;
-            }
-        }
-
-        a {
-            text-decoration: none;
-            display: flex;
-            justify-content: center;
-
-            button {
-                background: black;
-                border-radius: 20px;
-                color: white;
-                font-family: 'Poppins', sans-serif;
-                font-size: 16px;
-                transition: all 0.5s ease-in-out;
-                margin-bottom: 100px;
-
-                &:hover {
-                    color: $bordo;
-                    box-shadow: 0px 4px 20px $dorado;
-                    transition: all 0.5s ease-in-out;
-                }
-            }
-        }
-
-        img {
-            max-width: 100%;
-            width: 100%;
-            padding-top: 100px;
-            padding-bottom: 100px;
-        }
-
-        section {
-            h2 {
-                text-align: center;
-                padding-bottom: 1em;
-                margin: 0 auto;
-                background: none;
-                color: white;
-                font-family: 'Poppins', sans-serif;
-                letter-spacing: 10px;
-                font-size: 35px;
-                font-weight: 800;
-
-            }
-
-            div {
-                div {
-                    background-color: black; //important removido
-                    color: $bordo; //important removido
-                    img {
-                        margin: 0px;
-                        padding: 0px;
-                        height: 250px;
-                        
-                    }
-                }
-            }
-        }
-    }
-
-    footer {
-        color: white;
-        text-align: center;
-        margin-top: 10px;
-    }
-}
-
-//EMPIEZA ESTILO DEL MAIN DE SOBRE VR
-.mainSobreVR {
-    color: white;
-    padding: 20px;
-
-    .titulo {
-        @include estilo-titulos();
-    }
-
-    section {
-        h2 {
-            text-align: center;
-            padding: 1em;
-            margin: 0 auto;
-            background: none;
-            color: $bordo;
-            font-family: 'Poppins', sans-serif;
-            letter-spacing: 10px;
-            font-size: 50px;
-            font-weight: 800;
-            text-shadow: 1px 1px 5px white;
-        }
-
-        .cardsObjetivo {
-            display: grid;
-            grid-template-rows: 1fr 1fr 1fr;
-            gap: 2em 3em;
-            text-align: center;
-
-            div {
-                box-sizing: border-box;
-                border-radius: 20px;
-
-                &:nth-child(1) {
-                    background-color: $dorado;
-                    padding: 1em;
-                }
-
-                &:nth-child(2) {
-                    background-color: $rojo;
-                    padding: 1em;
-                }
-
-                &:nth-child(3) {
-                    background-color: $celeste;
-                    padding: 1em;
-                }
-            }
-        }
-
-        .cardsSurgimiento {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr;
-            gap: 1em 1em;
-            padding-right: 1em;
-            grid-template-areas: "card4 card5";
-
-            div {
-                &.card4 {
-                    grid-area: card4;
-
-                    img {
-                        width: 100%;
-                    }
-                }
-
-                &.card5 {
-                    grid-area: card5;
-                    background-color: $rojo;
-                    box-sizing: border-box;
-                    border-radius: 20px;
-                    padding: 1em;
-                    h3{
-                        font-size: 26px;
-                        letter-spacing: 1px;
-                    }
-                }
-            }
-        }
-    }
-
-    footer {
-        color: white;
-        text-align: center;
-        margin-top: 10px;
-    }
-}
-
-//EMPIEZA ESTILO DE VIDEOS.HTML
-.mainVideos {
-    .titulo {
-        @include estilo-titulos();
-    }
-
-    .boxContainer {
-        display: grid;
-        justify-items: center;
-
-        .cajaMateria {
-            width: 350px;
-            height: 350px;
-            margin: 0.5rem;
-            border-radius: 0.5em;
-            transition: all 0.5s ease-in-out;
-            text-align: center;
-
-            &:hover {
-                box-shadow: 0px 4px 25px white;
-            }
-        }
-
-        .box1 {
-            grid-area: box1;
-            background-color: rgb(12, 11, 11);
-            p{
-                font-size: 30px;
-                color:white;
-                text-shadow: 0px 2px 2px $bordo ;
-                margin-top: 25px;
-            }
-            img{
-                height: 200px;
-                width: 300px;
-                margin-top: 1.5em;
-            }
-        }
-
-        .box2 {
-            grid-area: box2;
-            background-color: rgb(12, 11, 11);
-            p{
-                font-size: 30px;
-                color:white;
-                text-shadow: 0px 2px 2px $bordo ;
-                margin-top: 25px;
-            }
-            img{
-                height: 200px;
-                width: 300px;
-                margin-top: 1.5em;
-            }
-        }
-
-        .box3 {
-            grid-area: box3;
-            background-color: rgb(12, 11, 11);
-            p{
-                font-size: 30px;
-                color:white;
-                text-shadow: 0px 2px 2px $bordo ;
-                margin-top: 25px;
-            }
-            img{
-                height: 200px;
-                width: 300px;
-                margin-top: 1.5em;
-            }
-            
-        }
-
-        .box4 {
-            grid-area: box4;
-            background-color: rgb(12, 11, 11);
-            p{
-                font-size: 30px;
-                color:white;
-                text-shadow: 0px 2px 2px $bordo ;
-                margin-top: 25px;
-            }
-            img{
-                height: 200px;
-                width: 300px;
-                margin-top: 1.5em;
-            }
-        }
-
-        .box5 {
-            grid-area: box5;
-            background-color: rgb(12, 11, 11);
-            p{
-                font-size: 30px;
-                color:white;
-                text-shadow: 0px 2px 2px $bordo ;
-                margin-top: 25px;
-            }
-            img{
-                height: 200px;
-                width: 300px;
-                margin-top: 1.5em;
-            }
-        }
-
-        .box6 {
-            grid-area: box6;
-            background-color: rgb(12, 11, 11);
-            p{
-                font-size: 30px;
-                color:white;
-                text-shadow: 0px 2px 2px $bordo ;
-                margin-top: 25px;
-            }
-            img{
-                height: 200px;
-                width: 300px;
-                margin-top: 1.5em;
-            }
-        }
-
-        .box7 {
-            grid-area: box7;
-            background-color: rgb(12, 11, 11);
-            p{
-                font-size: 30px;
-                color:white;
-                text-shadow: 0px 2px 2px $bordo ;
-                margin-top: 25px;
-            }
-            img{
-                height: 200px;
-                width: 300px;
-                margin-top: 1.5em;
-            }
-        }
-
-        .box8 {
-            grid-area: box8;
-            background-color: rgb(12, 11, 11);
-            p{
-                font-size: 30px;
-                color:white;
-                text-shadow: 0px 2px 2px $bordo ;
-                margin-top: 25px;
-            }
-            img{
-                height: 200px;
-                width: 300px;
-                margin-top: 1.5em;
-            }
-        }
-
-        .box9 {
-            grid-area: box9;
-            background-color: rgb(12, 11, 11);
-            p{
-                font-size: 30px;
-                color:white;
-                text-shadow: 0px 2px 2px $bordo ;
-                margin-top: 25px;
-            }
-            img{
-                height: 200px;
-                width: 300px;
-                margin-top: 1.5em;
-            }
-        }
-    }
-}
-
-footer {
-    color: white;
-    text-align: center;
-    margin-top: 10px;
-}
-
-//EMPIEZA ESTILO DEL MAIN DE INICIAR SESIÓN
-.mainIniciarsesion {
-    .titulo {
-        @include estilo-titulos();
-    }
-    
-    div {
-        font-weight: 600;
-        color: black;
-
-        div {
-            background-color: $bordo;
-            margin: 0 auto;
-            max-width: 90%;
-            text-align: center;
-            border-radius: 10px;
-
-            section {
-                margin-top: 1em;
-                height: 350px;
-                max-width: 100%;
-
-                .formularioIs container-fluid {
-                    flex-direction: column;
-                    align-items: center;
-
-                    label {
-                        margin-top: 1em;
-                        font-family: 'Poppins', sans-serif;
-                        font-size: 25px;
-                        text-align: center;
-                        margin-bottom: 0.5em;
-                        color: black;
-                    }
-                }
-
-                .botonIniciarSesion {
-                    margin-top: 1em;
-                    background-color: $turquesa;//important removido
-
-                    &:hover {
-                        box-shadow: 0px 4px 25px white ;//important removido
-                        transition: all 0.5s ease-in-out ;//important removido
-                        background-color: $turquesa ;//important removido
-                    }
-                }
-
-            }
-        }
-    }
-
-}
-
-.mainContacto {
-    .titulo {
-        @include estilo-titulos();
-    }
-
-    .infoContainer {
-        margin: 0 auto;
-
-        .ubicacion,
-        .redes {
-            text-align: center;
-
-            h2 {
-                color: $bordo;
-                font-weight: 600;
-                font-size: 25px;
-            }
-
-            h3 {
-                color: white;
-                font-size: 20px;
-                padding-bottom: 20px;
-            }
-        }
-    }
-
-    .formularioContacto {
-        background-color: $celeste ;
-        margin-top: 1em;
-        height: 500px;
-        max-width: 100%;
-        border-radius: 10px;
-
-        div {
-            padding: 1em;
-
-            label {
-                margin-top: 1em;
-                font-family: 'Poppins', sans-serif;
-                font-size: 25px;
-                text-align: center;
-                margin-bottom: 0.5em;
-                color: black;
-                font-weight: 600;
-            }
-
-            textarea {
-                height: 100%;
-            }
-        }
-
-
-        button.botonEnviar {
-            margin: 1em;
-            background-color: $bordo;//removí important
-
-            &:hover {
-                box-shadow: 0px 4px 25px white ;//removí important
-                transition: all 0.5s ease-in-out ;//removí important
-                background-color: $rojo ;//removí important
-            }
-        }
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (min-width: 1274px) {
     /*COMPUTADOR*/
-
-
     /*todo lo que sea +1200 se va a ver así*/
+    .card5 h3{
+        font-size: 26px;
+        letter-spacing: 2px;
+        line-height: 45px;
+    }
+    .card1 , .card2 ,.card3{
+        justify-content: center;
+    } 
     #surgimiento {
         padding-top: 1em;
     }
@@ -794,6 +186,16 @@ footer {
 @media only screen and (max-width: 767px) {
 
     /*DISPOSITIVO MOVIL*/
+    
+    .cardsObjetivo{
+        gap: 2em 3em;
+    }
+    .card1,.card2,.card3{
+        height: 100px;
+    }
+    .card1 h3,.card2 h3,.card3 h3{
+        font-size: 20px;
+    }
     .mainContacto a{
         text-decoration: none;
         color:white;
@@ -882,7 +284,11 @@ footer {
     .card4 img {
         width: 100%;//removí important
     }
-
+    .card5 h3{
+        letter-spacing: 2px;
+        font-size: 20px;
+        
+    }
     #navSanjoVR {
         @include estilo-nav();
     }
@@ -903,5 +309,5 @@ footer {
     #burguerIcon {
         color: white;
     }
-
+    
 }
