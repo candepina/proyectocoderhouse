@@ -404,6 +404,7 @@ footer {
 }
 .mainContacto .infoContainer {
   margin: 0 auto;
+  padding-top: 20px;
 }
 .mainContacto .infoContainer .ubicacion,
 .mainContacto .infoContainer .redes {
